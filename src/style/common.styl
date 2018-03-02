@@ -1,0 +1,209 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  color:#000;
+  background:#fff;
+  overflow-x: hidden;
+  overflow-y:scroll;
+}
+
+html *{
+  outline:0;
+  -webkit-text-size-adjust:none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0
+}
+
+a
+{
+  text-decoration:none
+}
+
+.clearfix{
+  display: inline-block;
+}
+.clearfix:after{
+  display: block;
+  content: ".";
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.btn-active {
+  position: relative;
+}
+.btn-active:not(.is-disabled):active:after {
+  opacity: .4;  
+}
+.btn-active:after {
+    background-color: #000;
+    content: " ";
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.red
+  color: #e74c3c
+
+.blue
+  color: #247ef2
+.orange
+  color: #f39c12
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5)
+  .border-1px
+    &:after
+      -webkit-transform: scaleY(0.7)
+      transform: scaleY(0.7)
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)
+  .border-1px
+    &:after
+      -webkit-transform: scaleY(0.5)
+      transform: scaleY(0.5)
+
+// @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+//   .border-1px
+//     &:after
+//       -webkit-transform: scaleY(0.333)
+//       transform: scaleY(0.333)
+
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5)
+  .border-1px
+    &:before
+      -webkit-transform: scaleY(0.7)
+      transform: scaleY(0.7)
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)
+  .border-1px
+    &:before
+      -webkit-transform: scaleY(0.5)
+      transform: scaleY(0.5)
+
+// @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+//   .border-1px
+//     &:before
+//       -webkit-transform: scaleY(0.333)
+//       transform: scaleY(0.333)
+
+
+.m-radio
+  position: relative;
+  display: inline-block;
+  width: 28px;/*px*/
+  height: 28px;/*px*/
+  border: 2px solid #247ef2;
+  border-radius: 100%;
+  .m-radio-check
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    pointer-events: none;
+  input 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity : 0;
+  input:checked + .m-radio-check
+    width: 12px;/*px*/
+    height: 12px;/*px*/
+    background-color: #247ef2;
+    border-radius: 100%;
+    top: 6px;/*px*/
+    left: 6px;/*px*/
+
+.m-checkbox
+  position: relative;
+  display: inline-block;
+  width: 28px;/*px*/
+  height: 28px;/*px*/
+  border-radius: 4px;/*px*/
+  border: 2px solid #247ef2;
+  input
+    position: relative;
+    width: 500%;
+    height: 500%;
+    top: 0;
+    left: 0;
+    opacity : 0;
+  .m-checkbox-check
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    pointer-events: none;
+  input:checked + .m-checkbox-check
+    top: 4px;
+    left: 8px;
+    border: 4px solid #247ef2;
+    border-left: 0;
+    border-top: 0;
+    width: 8px;
+    height: 16px;
+    transform: rotate(45deg)
+.llh-loadmore-bottom
+  margin-bottom: -100px;
+  height: 100px;
+  line-height: 100px;
+.loadBottomInfo
+  display: inline-block
+  transition: all .2s linear;
+.is-rotate
+  transform: rotate(180deg);
+.loadBottomIcon
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+.loadBottomIconText
+  margin: 0 10px;
+.loadBottomInfo
+  display: flex;
+  justify-content: center;
+.loadBottomNothing
+  width: 100%;
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+.1px {
+  background-origin: border-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9d9d9), color-stop(50%, #d9d9d9), color-stop(50%, transparent));
+  background-image: linear-gradient(180deg, #d9d9d9, #d9d9d9 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-origin: content-box;
+  box-sizing: border-box;
+  line-height: 1;
+  min-height: inherit;
+  overflow: hidden;
+  width: 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 1),(min-device-pixel-ratio: 1)
+  .1px{
+    background-size: 120% 2px;
+  }
+@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+  .1px{
+    background-size: 120% 3px;
+  }
+
+.footer-btn{
+  margin-top: 88px;
+  text-align: center;
+}

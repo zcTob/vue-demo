@@ -1,0 +1,33 @@
+bg-image($url)
+  background-image: url($url + "@2x.png")
+  @media (-webkit-min-device-pixel-ratio: 2.5),(min-device-pixel-ratio: 2.5)
+    background-image: url($url + "@3x.png")
+
+border-top-1px($color)
+  position: relative
+  &:before
+    pointer-events: none
+    display: block
+    position: absolute
+    left: 0
+    top: 0px;/*no*/
+    width: 200%
+    height: 1px;/*no*/
+    z-index: 999;
+    border-top: 1px solid $color;/*no*/
+    content: ''
+    transform-origin: 0 0;
+border-bottom-1px($color)
+  position: relative
+  &:after
+    pointer-events: none
+    display: block
+    position: absolute
+    left: 0
+    bottom: 0px;/*no*/
+    width: 200%
+    height: 1px;/*no*/
+    border-bottom: 1px solid $color;/*no*/
+    z-index: 999;
+    content:''
+    transform-origin: 0 0;

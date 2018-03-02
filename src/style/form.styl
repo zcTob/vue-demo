@@ -1,0 +1,70 @@
+.register,.back_password
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8
+    .page
+      padding-top: 10px
+      .tel,.yzm,.paw,.name,.firm_name
+        border-bottom-1px(#dddddd);
+      .tel
+        border-top-1px(#dddddd);
+        position: relative;
+        .get_yzm
+          position: absolute
+          top: 14px
+          right: 30px
+          button
+            width: 180px;
+            height: 60px;
+            background-color: #247ef2
+            border-radius: 8px;
+            font-size: 28px;
+            font-weight: 500;
+            color: #ffffff;
+            letter-spacing: 1px;
+            &.is-disabled
+              background-color: #c2c2c2
+      .paw
+        position relative;
+        .paw-switch
+          position: absolute
+          top: 26px
+          right: 25px
+      .agree
+        display: flex
+        align-items: center
+        padding: 20px 30px
+        .checkbox
+          position: relative;
+          width: 33px;
+          height: 33px;
+        input 
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0
+        label
+          bg-image('agree_deal')
+          background-size: 100% 100%
+          display: inline-block
+          background-repeat: no-repeat
+          width: 33px;
+          height: 33px;
+          transition: all .3s linear
+        input[type='checkbox']:checked+label
+          bg-image('agree_deal_checked')
+          background-size: 100% 100%
+          background-repeat: no-repeat
+        span 
+          margin-left: 16px
+          font-size: 24px;/*px*/
+          color: #282828;
+          a
+            color: #247ef2
+
+
+
+
+

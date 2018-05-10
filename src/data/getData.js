@@ -5,11 +5,8 @@ import router from '@/router/index';
 import * as types from '@/store/mutations-types';
 import qs from 'qs';
 
-// axios.defaults.baseURL = process.env.REMOTE_HOST;
-// axios.defaults.baseURL = window.location.origin;
-// axios.defaults.baseURL = 'http://zyweb.xin';
-axios.defaults.baseURL = 'http://s2test.luliaohui.com';
-// axios.defaults.baseURL = 'http://192.168.10.4:7923';
+
+axios.defaults.baseURL = '';
 axios.defaults.withCredentials = true;
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
 axios.defaults.timeout = 5000;
